@@ -7,3 +7,12 @@
 th {
   text-align: left;
 }
+
+h2 {
+	font-weight: strong;
+	font-size: medium;
+}
+
+#user-says {
+	font-style: italic;
+}

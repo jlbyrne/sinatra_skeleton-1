@@ -1,23 +1,55 @@
 <div class="container">
-  <h1>Welcome to Sinatra!</h1>
-  <p>Hello, world!</p>
+  <h1>Welcome to Poking at Things!</h1>
+  <h2>Where we poke at things and see if they work!</h2>
+  <br>
 
-  <table>
-    <tr>
-      <th>File Description</th>
-      <th>File Location</th>
-    </tr>
-    <tr>
-      <td>This view file</td>
-      <td><code><%= __FILE__.gsub(Sinatra::Application.root, '') %></code></td>
-    </tr>
-    <tr>
-      <td>The layout file</td>
-      <td><code><%= File.expand_path('../layout.erb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
-    </tr>
-    <tr>
-      <td>The current controller</td>
-      <td><code><%= File.expand_path('../../controllers/index.rb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
-    </tr>
-  </table>
+  <form id = "text-form" action="/cool_url" method="post">
+    Type something and see if it works:
+    <br><br>
+    <input type="text" name="text_input">
+    <input type="submit" value="Poke!">
+  </form> 
+
+  <br><br>
+  <form id = "text-form" action="/cool_url" method="get">
+    How do you feel about poking things and seeing if they work?:
+    <br><br>
+    <input type="radio" name="radio_input" value= "so sick of it">
+    So sick of it
+    <br><br>
+    <input type="radio" name="radio_input" value= "really sick of it">
+    Really sick of it
+    <br><br>
+    <input type="radio" name="radio_input" value= "OMFG, stop talking about poking things">
+    OMFG, stop talking about poking things
+    <br><br>
+    <input type="submit" value="Poke!">
+  </form> 
+
+  <br><br>
+  <form id = "check-form" action="/cool_url" method="get">
+    I'm running out of ideas for questions!
+    <br><br>
+    <input type="checkbox" name="check_input_1" value="Multiple things">
+    Multiple things
+    <br>
+    <input type="checkbox" name="check_input_2" value="will be">
+    will be
+    <br>
+    <input type="checkbox" name="check_input_3" value="poked at">
+    poked at
+    <br><br>
+    <input type="submit" value="don't click me">
+  </form>
+
+  <br><br>
+  <form id = "select-form" action="/cool_url" method="post">
+    What do you want right now?
+    <select>
+      <option name="select_input" value="I want lots of sleep">I want lots of sleep</option>
+      <option name="select_input" value="I want lots of food">I want lots of food</option>
+      <option name="select_input" value="I want lots of shoes">I want lots of shoes</option>
+    </select>
+    <input type="submit" value="Not Happening">
+  </form>  
 </div>
